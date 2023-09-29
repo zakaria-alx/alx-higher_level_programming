@@ -13,4 +13,4 @@ if __name__ == "__main__":
     email = sys.argv[2]
 
     response = requests.post(url, data={"email": email})
-    print(dict(response.headers).get("X-Request-Id"))
+    print("{}".format(response.text))
